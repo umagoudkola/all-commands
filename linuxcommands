@@ -1,0 +1,131 @@
+LINUX COMMANDS
+-----------------
+To create a directory by usking command is
+mkdir <directory name>
+Do delete mt directort by using command is
+rmdir <diroctory name>
+To delete non mt directory by using command is
+rm -rf <direcotry name>
+To copy the one directory to another directory by using command is
+cp <source directory> <destination directory>
+To copy the file to the directory my using command is 
+cp <filename> <directory name>
+Rename the directory by using command is
+mv <directory name> <new name>
+To create parent directory by using command is
+mkdir -p A/B/C/D
+Switched to the directory by using command is
+cd <directory name>
+
+FILES
+----------
+files are 3 types
+cat file(data)
+touch file(mt)
+vi files(syntax)
+To create the file by using command is
+cat > <file name>
+write sum data then control+d=save
+To create the mt files by using command is
+touch > <file name>
+To append(add the more data) the data by using command is
+cat >> <filename>
+add the data control+d=save
+To remove the file by using command is
+rm <file name>
+To see tha files by using command is 
+ls
+To see the files in longlist format by using command is
+ls -l
+To see the hidden file by using command is
+ls -a
+To see the files in reverse order by using command is
+ls -lr
+To see the index number in file by using command is 
+ls -li
+To see the tree structure by using command is 
+ls -R
+To see the file permisions by using command is 
+ls -l <file name>
+To copy the one file to another file by using command is
+cp <source file> <destination file>
+To create one file and direct copy the file by using command is
+cat <old file name> >> <new file name>
+To save the file by using command is
+control+d
+Rename the file by using command is
+mv <old filename> <new filename>
+How to see the present area
+pwd
+Ones you create the file the permissions automatically comes
+user-rw group-r others-r
+Copy the non mt directory to other directory by using command is 
+cp -r <source directory> <destination directory>
+How to delete multiple files my using command is
+rm <f1> <f2> <f3> ...
+
+USERS
+-------
+Users are 3 types
+1) super user
+2)normal user (root user)
+3) system user
+How to create one user by using command is
+useradd <username>
+how to see the users by using command is 
+cd /etc/user
+how to add the specfic id to user by using command is
+adduser <userid> <user name>
+SUper user is converterd to root user by using command is
+sudo -i
+Root user is converted to super user by using command is
+exit
+How to see the private ip by using command is
+host name
+How to lock one user by using command is
+usermod -L <username>
+How to unlock to the user by using command is
+usermod -U <username>
+how to create multiple user
+its not possible
+USER PERMISSION
+-----------------
+Read permission to user chmod u+r <filename>
+write permission to the user chmod u+w <file name>
+Others permission to the user chmod u+x <file name>
+all permission gives to the user by using command is 
+chmod 700 <filename>
+r=4 w=2 x=1
+Remove the file permissions to the use by using command is
+chmod u-r,u-w,u-x <file name>
+How to delete user by using command is
+userdel <username>
+
+GROUPS
+---------
+To create the one group by using command is
+groupadd <group name>
+One user how to attached the group by using command is
+gpasswd -a <username> <group name>
+How to see the group by using command is
+cat /etc/group
+How to attached the multiple users to the group by using command is
+gpasswd -M <user1> <user2> <user3> <group name>
+How do delete the user in group by using command is
+gpasswd -d <username> <group name>
+How to attached to the admin in group by using command is
+gpasswd -A <username> <group name>
+How to check the admin in group by using command is 
+cat /etc/shadow
+How to change the group name by using command is
+groupmod -n <new name> <old name>
+To create own groupid with group by using command 
+groupadd -g <id> <groupname>
+How to delete the group
+gropdel <group name>
+Give permissions to the group by using command is
+chmod g+r(or)g+w(or)g+x file name
+Remove the file permissions to the group by using command is
+chmod g-r(or)g-w(or)g-w file name
+How to give the password to the file by using command
+passwd <filename>

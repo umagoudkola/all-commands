@@ -1,0 +1,86 @@
+GIT COMMANDS
+==============
+clone the code by using command is
+git clone <repo url>
+
+local folder is convert to git folder by using by using command is
+git init
+
+switched to the repository by using command is
+cd <repository name>
+
+list of the file by using command is
+ls
+
+create the one branch by using command is
+git branch <branch name>
+
+switched to the branch by using command is
+git checkout <branch name>
+
+delete the branch by using command is
+git branch -D <branch name>
+
+all files moved one branched to another branch by using command is
+git merge <source file> <destination file>
+
+specfic files are moved one branch by using command is
+git cherry-pick <commit id>
+
+how to see the commit ids by using command is
+git log --oneline
+
+change the commits by using command is
+git commit --amend -m "commitid"
+
+rename the branch by using command is 
+git branch -m <oldname> <new name>
+
+the files are moveing working area to staging area by using command is
+git add .
+
+the files are moved staging area to local repository by using command is
+git commit -m "commit message"
+
+the files are moved from local repositort to remote repositiry or github
+git push or git push -f
+
+the files are moved remote repository to local repository by using command is
+git pull
+
+how to hide the files by using command is
+git stash save <filenaame>
+
+how to see the stash file by using command is
+git stash list
+
+to backup stash file my using command is 
+git stash apply <filename>
+
+completely backup the stash file by using command is
+git stash pop stashid
+
+how to backup the branch by using command is
+git branch <branch name> <delete id>
+
+at time branch is created and switched to the branch by using command is
+git checkout -b <branch name>
+
+rename the file by using command is
+git mv <oldname> <new name>
+
+version by using command is
+git tag v0:1 <commitid>
+
+second btanche is pushed to the reepository by using command is
+git push origin <branch name>
+
+local folder is push to the remote before using command is
+git remote add <filename> <git repo url>
+
+how to check the file status by using command is
+git status
+
+
+
+
